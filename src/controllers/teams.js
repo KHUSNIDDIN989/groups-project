@@ -29,7 +29,28 @@ const POST_TEAMS = (req, res) => {
   }
 };
 
+const UPDATE_TEAMS = (req, res) => {
+  try {
+    const { name, logo, trener } = req.body;
+    const { id } = req.params;
+
+    const data = read("teams.json");
+    const teams = data.find((e) => e.id == id);
+
+    teams.name = name || teams.name;
+    teams.logo = logo || teams.logo;
+    teams.trener = trener || teams.trener;
+
+    write("teams.json", data);
+    res.sendStatus(200).json(teams);
+  } catch (err) {
+    console.log(err);
+    res.sendStatus(500);
+  }
+};
+
 module.exports = {
   GET_TEAMS,
   POST_TEAMS,
+  UPDATE_TEAMS,
 };
