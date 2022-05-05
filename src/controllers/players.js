@@ -11,6 +11,21 @@ const GET_PLAYERS = (_, res) => {
   }
 };
 
+const POST_PLAYERS = (req, res) => {
+  try {
+    const { name, price, position } = req.body;
+    const data = read("players.json");
+
+    data.push({ id: data.length + 1, name, price, position });
+
+    write("players.json", data);
+    res.send("ok");
+  } catch (err) {
+    console.log(err);
+    res.sendStatus(401);
+  }
+};
+
 const UPDATE_PLAYERS = (req, res) => {
   try {
     const players = read("players.json");
@@ -45,6 +60,7 @@ const DELETE_PLAYERS = (req, res) => {
 };
 module.exports = {
   GET_PLAYERS,
+  POST_PLAYERS,
   UPDATE_PLAYERS,
   DELETE_PLAYERS,
 };

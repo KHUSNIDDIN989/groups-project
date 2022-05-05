@@ -8,5 +8,6 @@ module.exports = router
   .put("/teams/:id", teams.UPDATE_TEAMS)
   .delete("/teams/:id", teams.DELETE_TEAMS)
   .get("/players", palyers.GET_PLAYERS)
+  .post("/plyers", palyers.POST_PLAYERS)
   .put("/players", palyers.UPDATE_PLAYERS)
   .delete("/players", palyers.DELETE_PLAYERS);
