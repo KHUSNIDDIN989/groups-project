@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "name": "Real Madrid",
+    "players": [],
+    "logo": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.realmadrid.com%2Fen&psig=AOvVaw0HdO877RtKjv7fjk12GRpV&ust=1651813462040000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCNDko-jKx_cCFQAAAAAdAAAAABAD",
+    "trener": "Karlo Anchelotti"
+  },
+  {
+    "id": 2,
+    "name": "Manchester City",
+    "players": [],
+    "logo": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fvectorlogo4u.com%2Fmanchester-city-logo-vector-download%2F&psig=AOvVaw1EZr8wq1Vzu3b3xHszp3_i&ust=1651813607135000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKDSgK_Lx_cCFQAAAAAdAAAAABAD"
+  },
+  {
+    "id": 3,
+    "name": "Nasaf",
+    "players": [],
+    "logo": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.logobank.uz%2Flogos%2F263&psig=AOvVaw2Djy-t5bN5cE2pRCQBlOuF&ust=1651813682782000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCICDp9HLx_cCFQAAAAAdAAAAABAD"
+  }
+]
