@@ -49,8 +49,20 @@ const UPDATE_TEAMS = (req, res) => {
   }
 };
 
+const DELETE_TEAMS = (req, res) => {
+  const id = req.params.id;
+  const teams = read("teams.json");
+
+  const teamIndex = teams.findIndex((i) => i.id == id);
+  teams.splice(teamIndex, 1);
+
+  write("teams.json", teams);
+  res.send("Deleted !");
+};
+
 module.exports = {
   GET_TEAMS,
   POST_TEAMS,
   UPDATE_TEAMS,
+  DELETE_TEAMS,
 };
